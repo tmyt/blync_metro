@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+
+  <Identity Name="b678b022-f514-461f-b72f-31e6d8810b5b"
+            Publisher="CN=yutaka"
+            Version="1.0.0.0" />
+
+  <Properties>
+    <DisplayName>blync app</DisplayName>
+    <PublisherDisplayName>yutaka</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+        Executable="$targetnametoken$.exe"
+        EntryPoint="blync_app.App">
+        <m2:VisualElements
+            DisplayName="blync app"
+            Square150x150Logo="Assets\Logo.png"
+            Square30x30Logo="Assets\SmallLogo.png"
+            Description="blync app"
+            ForegroundText="light"
+            BackgroundColor="#464646">
+            <m2:SplashScreen Image="Assets\SplashScreen.png" />
+        </m2:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <!-- HID Device -->
+    <m2:DeviceCapability Name="humaninterfacedevice">
+      <m2:Device Id="vidpid:1130 0001">
+        <m2:Function Type="usage:0001 0003"/>
+      </m2:Device>
+    </m2:DeviceCapability>
+  </Capabilities>
+</Package>

@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="blync_app.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:blync_app"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Loaded="MainPage_OnLoaded">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <ComboBox VerticalAlignment="Center" HorizontalAlignment="Center" SelectionChanged="Selector_OnSelectionChanged"
+                  FontSize="42">
+            <ComboBoxItem Tag="0">Purple</ComboBoxItem>
+            <ComboBoxItem Tag="16">Cyan</ComboBoxItem>
+            <ComboBoxItem Tag="32">Magenta</ComboBoxItem>
+            <ComboBoxItem Tag="48">Blue</ComboBoxItem>
+            <ComboBoxItem Tag="64">Yellow</ComboBoxItem>
+            <ComboBoxItem Tag="80">Green</ComboBoxItem>
+            <ComboBoxItem Tag="96">Red</ComboBoxItem>
+            <ComboBoxItem Tag="112">Reset</ComboBoxItem>
+        </ComboBox>
+    </Grid>
+</Page>
